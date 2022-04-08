@@ -5,13 +5,11 @@ import PySimpleGUI as sg
 layout = [[sg.Text('Enter two numbers')],
           [sg.InputText('')],
           [sg.InputText('')],
-          [sg.Button('+'), sg.Button('-'), sg.Button('*'), sg.Button('/')],
-          [sg.Button('='), sg.Button('Clear')]]
-
-
+          [sg.Button('-'), sg.Button('*'), sg.Button('*'), sg.Button('/')],
+          [sg.Button('='),sg.Button('Dont push the button'), sg.Button('Clear')]]
 
 # Create the window
-window = sg.Window("Demotheone", layout, size = (600,300), resizable = True)
+window = sg.Window("Demotheone", layout, size = (300,300), resizable = True)
 
 while True:
     event, values = window.read()
