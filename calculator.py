@@ -1,13 +1,11 @@
 
 import PySimpleGUI as sg
 
-# create calculator layout
+# create calculator layout 
 layout = [[sg.Text('Enter two numbers')],
-          [sg.InputText('')],
-          [sg.InputText('')],
-          [sg.Button('+'), sg.Button('-'), sg.Button('*'), sg.Button('/')],
-          [sg.Button('='), sg.Button('Clear')]]
-
+            [sg.Input(size=(5,1)), sg.Input(size=(5,1)), sg.Input(size=(5,1))],
+            [sg.Button('+'), sg.Button('-'), sg.Button('*'), sg.Button('/')],
+            [sg.Button('='), sg.Button('Clear')]]   # end of layout
 
 
 # Create the window
@@ -19,8 +17,6 @@ while True:
     # presses the OK button
     if event == "OK" or event == sg.WIN_CLOSED:
         break
-
-    # Do something based on the ev
 
 window.close()
 
