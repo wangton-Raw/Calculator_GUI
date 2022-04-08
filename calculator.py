@@ -11,7 +11,11 @@ layout = [[sg.Text('Enter two numbers')],
 
 
 # Create the window
+<<<<<<< HEAD
 window = sg.Window("Demotheone", layout, size = (500,300), resizable = True)
+=======
+window = sg.Window("Demo2", layout, size = (500,300), resizable = True)
+>>>>>>> c54081896a8d6547e29a97aa7d24702f15a36f32
 
 while True:
     event, values = window.read()
